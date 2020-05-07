@@ -20,6 +20,7 @@ class TestBlockPlugin extends BlockPlugin {
 	function handleTemplateDisplay($hookName, $args) {
 		$templateMgr =& $args[0];
 		$template =& $args[1];
+		// $request = PKPApplication::getRequest();
 		$request = PKPApplication::get()->getRequest();
 		$templateMgr->addStyleSheet(
 			'TestBlockPlugin',
